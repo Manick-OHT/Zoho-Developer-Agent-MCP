@@ -1,0 +1,3 @@
+@echo off
+echo Starting Zoho Creator MCP Agent...
+"M:\Creator Agent\venv\Scripts\python.exe" "M:\Creator Agent\server.py"
