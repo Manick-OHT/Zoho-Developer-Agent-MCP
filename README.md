@@ -1,10 +1,20 @@
-# 🤖 Zoho Creator MCP Browser Agent
+# 🤖 Zoho Developer Agent (MCP)
 
+An AI-powered Zoho Developer Agent (MCP) that interacts with real applications like a human. It works seamlessly across Zoho, Salesforce, and any web-based platform.
+Built using browser automation, it performs actions like clicking, typing, and navigation.
+Supports multi-tab workflows to manage multiple applications in parallel.
 Control your Chrome browser from Claude Desktop to build Zoho Creator applications using natural language.
 
 ```
 You (Claude Desktop) → MCP Server (Python) → Playwright (Chrome) → Zoho Creator
 ```
+Key Features
+- Browser automation (click, type, scroll, drag & drop)
+- Multi-tab support (each app in its own tab)
+- Works across multiple platforms
+- Persistent sessions (no repeated login)
+- AI-ready for MCP clients
+
 
 ## ⚡ Quick Setup (Windows)
 
@@ -92,20 +102,15 @@ Creator Agent/
 └── README.md          # This file
 ```
 
-## ❓ Troubleshooting
-
-**Hammer icon not showing in Claude Desktop?**
-- Make sure the path in `claude_desktop_config.json` uses `\\` (double backslash)
-- Restart Claude Desktop completely
-- Check the MCP server logs in Claude Desktop developer console
-
 **Browser not opening?**
 - Say `launch_browser` first before any other browser commands
 - Make sure Playwright Chromium is installed: `playwright install chromium`
 
-**Zoho login not persisting?**
-- The agent uses a persistent browser profile at `~/.zoho-creator-agent/browser-profile/`
-- Make sure you complete the full login flow once
+**Disclaimer**
+This document and implementation are provided by Officehubtech for reference purposes only.
+Officehubtech is not responsible for any data loss, system issues, or damages arising from the use of this setup.
 
-## 📄 License
-MIT — Built for productivity.
+**© Officehubtech**
+
+
+
